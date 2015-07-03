@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+require('../beat.js').cli.run( process.argv );
