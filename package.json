@@ -24,6 +24,6 @@
     "fis-postprocessor-require-async": "0.0.9",
     "fis-prepackager-widget-inline": "0.0.9",
     "fis-preprocessor-extlang": "0.0.9",
-    "beat-command-release": "0.0.1"
+    "beat-command-release": "0.0.x"
   }
 }
