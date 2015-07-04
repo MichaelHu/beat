@@ -230,7 +230,7 @@ fis.emitter.on('after-beat-release', function () {
 
     fis.util.copy(
         __dirname + '/assets/index.php'
-        , fis.project.getTempPath('www')
+        , fis.project.getTempPath('www') + '/index.php'
     );
 
 });
