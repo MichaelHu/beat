@@ -225,3 +225,12 @@ fis.emitter.on('fis-conf:loaded', function () {
     fis.config.set('roadmap.path', roadmapPath);
 
 });
+
+fis.emitter.on('after-beat-release', function () {
+
+    fis.util.copy(
+        __dirname + '/assets/index.php'
+        , fis.project.getTempPath('www')
+    );
+
+});
