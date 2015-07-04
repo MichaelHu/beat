@@ -23,13 +23,17 @@
 
 ## 3 使用
 
+1. 安装本地服务器插件：
 
-1. 启动本地服务器：
+        beat server init
+
+
+2. 启动本地服务器：
 
         beat server start 
 
 
-2. 发布代码：
+3. 发布代码：
 
         beat release 
 
