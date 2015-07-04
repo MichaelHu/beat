@@ -1,6 +1,6 @@
 {
   "name": "beat-fis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "fis resolution for beatles in diditaxi",
   "main": "beat.js",
   "scripts": {

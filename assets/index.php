@@ -61,7 +61,7 @@ function fis_debug_template_rewrite_rule($rewrite, $url, $root, $matches){
         header('Content-Type: text/html');
         // *.tpl files
         if(preg_match('/\.tpl$/i', $rewrite)){
-            fis_debug_render_smarty($rewrite);
+            fis_debug_render_smarty($file_path);
         }
         // *.html files
         else if(preg_match('/\.html$/i', $rewrite)){
