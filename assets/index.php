@@ -57,18 +57,23 @@ function fis_debug_render_smarty($tpl = null, $data = array()) {
 
 function fis_debug_template_rewrite_rule($rewrite, $url, $root, $matches){
     $file_path = $root . 'template/' . $rewrite;
+    $file_path = preg_replace(
+        '/\?.*/'
+        , ''
+        , $file_path
+    );
     if(file_exists($file_path)){
         header('Content-Type: text/html');
         // *.tpl files
-        if(preg_match('/\.tpl$/i', $rewrite)){
+        if(preg_match('/\.tpl$/i', $file_path)){
             fis_debug_render_smarty($file_path);
         }
         // *.html files
-        else if(preg_match('/\.html$/i', $rewrite)){
+        else if(preg_match('/\.html$/i', $file_path)){
             $testPath = preg_replace(
                 '/\.html$/' 
                 , ''
-                , $root . 'test/' . $rewrite
+                , $root . 'test/' . $file_path
             );
             $testPath .= '.php';
             if(file_exists($testPath)){
