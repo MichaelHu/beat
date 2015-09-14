@@ -1,6 +1,6 @@
 {
   "name": "beat-fis",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "fis resolution for beatles in diditaxi",
   "main": "beat.js",
   "scripts": {
@@ -23,7 +23,6 @@
     "fis-parser-less": "^0.1.3",
     "fis-postprocessor-require-async": "0.0.9",
     "fis-prepackager-widget-inline": "0.0.9",
-    "fis-preprocessor-extlang": "0.0.9",
     "beat-command-release": "0.0.x"
   }
 }
